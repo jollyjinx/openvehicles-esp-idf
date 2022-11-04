@@ -249,6 +249,8 @@ def unpack(filename, destination):
     info('Extracting {0} to {1}'.format(filename, destination))
     if filename.endswith('tar.gz'):
         archive_obj = tarfile.open(filename, 'r:gz')
+    elif filename.endswith('tar.xz'):
+        archive_obj = tarfile.open(filename, 'r:xz')
     elif filename.endswith('zip'):
         archive_obj = zipfile.ZipFile(filename)
     else:

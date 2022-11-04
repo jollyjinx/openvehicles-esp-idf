@@ -35,6 +35,15 @@
           }
         },
         {
+          "name": "1.22.0-97-gc752ad5d-5.2.0",
+          "status": "recommended",
+          "linux-arm64": {
+            "sha256": "d70d550f88448fa476b29fa50ef5502ab497a16ac7fa9ca24c6d0a39bb1e681e",
+            "size": 50657803,
+            "url": "https://github.com/espressif/arduino-esp32/releases/download/1.0.5-rc5/xtensa-esp32-elf-linux-armel-1.22.0-97-gc752ad5-5.2.0.tar.gz"
+          }
+        },
+        {
           "linux-amd64": {
             "sha256": "96f5f6e7611a0ed1dc47048c54c3113fc5cebffbf0ba90d8bfcd497afc7ef9f3",
             "size": 44225380,
@@ -64,7 +73,7 @@
       "description": "Toolchain for ESP32 ULP coprocessor",
       "export_paths": [
         [
-          "esp32ulp-elf-binutils",
+          "esp32ulp-elf",
           "bin"
         ]
       ],
@@ -77,8 +86,17 @@
         "esp32ulp-elf-as",
         "--version"
       ],
-      "version_regex": "\\(GNU Binutils\\)\\s+([0-9a-z\\.\\-]+)",
+      "version_regex": "\\(GNU Binutils\\)\\s+([0-9a-z_\\.\\-]+)\\s+",
       "versions": [
+        {
+          "name": "2.35_20220830",
+          "status": "recommended",
+          "linux-arm64": {
+            "sha256": "d6671b31bab31b9b13aea25bb7d60f15484cb8bf961ddbf67a62867e5563eae5",
+            "size": 10052225,
+            "url": "https://github.com/espressif/binutils-gdb/releases/download/esp32ulp-elf-v2.35_20220830/esp32ulp-elf-2.35_20220830-linux-arm64.tar.gz"
+          }
+        },
         {
           "linux-amd64": {
             "sha256": "c1bbcd65e1e30c7312a50344c8dbc70c2941580a79aa8f8abbce8e0e90c79566",
@@ -151,6 +169,11 @@
             "size": 38405896,
             "url": "https://github.com/Kitware/CMake/releases/download/v3.13.4/cmake-3.13.4-Linux-x86_64.tar.gz"
           },
+          "linux-arm64": {
+            "sha256": "7dc787ef968dfef92491a4f191b8739ff70f8a649608b811c7a737b52481beb0",
+            "size": 19811327,
+            "url": "https://dl.espressif.com/dl/cmake/cmake-3.24.0-Linux-armv7l.tar.gz"
+          },
           "macos": {
             "sha256": "fef537614d73fda848f6168273b6c7ba45f850484533361e7bc50ac1d315f780",
             "size": 32062124,
@@ -192,6 +215,15 @@
       ],
       "version_regex": "Open On-Chip Debugger\\s+([a-z0-9.-]+)\\s+",
       "versions": [
+        {
+          "name": "v0.11.0-esp32-20220706",
+          "status": "recommended",
+          "linux-arm64": {
+            "sha256": "f97792bc2852937ec0accb9f0eb2e49926c0f747a71f101a4e34aed75d2c6fcc",
+            "size": 1954685,
+            "url": "https://github.com/espressif/openocd-esp32/releases/download/v0.11.0-esp32-20220706/openocd-esp32-linux-arm64-0.11.0-esp32-20220706.tar.gz"
+          }
+        },
         {
           "linux-amd64": {
             "sha256": "e5b5579edffde090e426b4995b346e281843bf84394f8e68c8e41bd1e4c576bd",
@@ -393,3 +425,4 @@
   ],
   "version": 1
 }
+
