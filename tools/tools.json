@@ -44,6 +44,11 @@
           }
         },
         {
+          "macos-arm64": {
+            "sha256": "b1ce39a563ae359cf363fb7d8ee80cb1e5226fda83188203cff60f16f55e33ef",
+            "size": 50525386,
+            "url": "https://github.com/espressif/arduino-esp32/releases/download/1.0.5-rc5/xtensa-esp32-elf-macos-1.22.0-97-gc752ad5-5.2.0.tar.gz"
+          },
           "linux-amd64": {
             "sha256": "96f5f6e7611a0ed1dc47048c54c3113fc5cebffbf0ba90d8bfcd497afc7ef9f3",
             "size": 44225380,
@@ -95,6 +100,15 @@
             "sha256": "d6671b31bab31b9b13aea25bb7d60f15484cb8bf961ddbf67a62867e5563eae5",
             "size": 10052225,
             "url": "https://github.com/espressif/binutils-gdb/releases/download/esp32ulp-elf-v2.35_20220830/esp32ulp-elf-2.35_20220830-linux-arm64.tar.gz"
+          }
+        },
+        {
+          "name": "2.35_20220830",
+          "status": "recommended",
+          "macos-arm64": {
+            "sha256": "73bda8476ef92d4f4abee96519abbba40e5ee32f368427469447b83cc7bb9b42",
+            "size": 15045401,
+            "url": "https://github.com/espressif/binutils-gdb/releases/download/esp32ulp-elf-v2.35_20220830/esp32ulp-elf-2.35_20220830-macos-arm64.tar.gz"
           }
         },
         {
@@ -222,6 +236,15 @@
             "sha256": "f97792bc2852937ec0accb9f0eb2e49926c0f747a71f101a4e34aed75d2c6fcc",
             "size": 1954685,
             "url": "https://github.com/espressif/openocd-esp32/releases/download/v0.11.0-esp32-20220706/openocd-esp32-linux-arm64-0.11.0-esp32-20220706.tar.gz"
+          }
+        },
+        {
+          "name": "v0.11.0-esp32-20221026",
+          "status": "recommended",
+          "macos-arm64": {
+            "sha256": "c426c0158ba6488e2f432f7c5b22e79155b5b0fae6d1ad5bbd7894723b43aa12",
+            "size": 2247179,
+            "url": "https://github.com/espressif/openocd-esp32/releases/download/v0.11.0-esp32-20221026/openocd-esp32-macos-arm64-0.11.0-esp32-20221026.tar.gz"
           }
         },
         {
@@ -425,4 +448,3 @@
   ],
   "version": 1
 }
-

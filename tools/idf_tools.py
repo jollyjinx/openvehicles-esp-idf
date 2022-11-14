@@ -89,6 +89,7 @@ PYTHON_PLATFORM = platform.system() + '-' + platform.machine()
 PLATFORM_WIN32 = 'win32'
 PLATFORM_WIN64 = 'win64'
 PLATFORM_MACOS = 'macos'
+PLATFORM_MACOS_ARM64 = 'macos-arm64'
 PLATFORM_LINUX32 = 'linux-i686'
 PLATFORM_LINUX64 = 'linux-amd64'
 PLATFORM_LINUX_ARM32 = 'linux-armel'
@@ -112,6 +113,11 @@ PLATFORM_FROM_NAME = {
     'osx': PLATFORM_MACOS,
     'darwin': PLATFORM_MACOS,
     'Darwin-x86_64': PLATFORM_MACOS,
+    'x86_64-apple-darwin': PLATFORM_MACOS,
+    PLATFORM_MACOS_ARM64: PLATFORM_MACOS_ARM64,
+    'Darwin-arm64': PLATFORM_MACOS_ARM64,
+    'aarch64-apple-darwin': PLATFORM_MACOS_ARM64,
+    'arm64-apple-darwin': PLATFORM_MACOS_ARM64,
     # Linux
     PLATFORM_LINUX64: PLATFORM_LINUX64,
     'linux64': PLATFORM_LINUX64,
