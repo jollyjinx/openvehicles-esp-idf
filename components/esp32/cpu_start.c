@@ -73,6 +73,7 @@
 #include "trax.h"
 #include "esp_ota_ops.h"
 #include "bootloader_flash_config.h"
+#include "cpu_start_battery.h"
 
 #define STRINGIFY(s) STRINGIFY2(s)
 #define STRINGIFY2(s) #s
@@ -197,6 +198,7 @@ void IRAM_ATTR call_start_cpu0()
         ESP_EARLY_LOGI(TAG, "ELF file SHA256:  %s...", buf);
         ESP_EARLY_LOGI(TAG, "ESP-IDF:          %s", app_desc->idf_ver);
     }
+    singleCoreSleepBatteryIfNeeded();
 
 #if !CONFIG_FREERTOS_UNICORE
     if (REG_GET_BIT(EFUSE_BLK0_RDATA3_REG, EFUSE_RD_CHIP_VER_DIS_APP_CPU)) {
